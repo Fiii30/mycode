@@ -7,19 +7,21 @@
         <link rel="stylesheet" href="css/style_login.css">
     </head>
     <body>
-        <h2>Login</h2>
-        <form action="process/p_login.php" method="POST">
-            <label for="">Email</label>
-            <input type="email" name="email" placeholder="Input Email" required>
+        <div class="container">
+            <h2>Login</h2>
+            <form action="process/p_login.php" method="POST">
+                <label for="">Email</label>
+                <input type="email" name="email" placeholder="Input Email" required>
 
-            <label for="">Password</label>
-            <input type="password" name="password" placeholder="Input Passoword" required>
+                <label for="">Password</label>
+                <input type="password" name="password" placeholder="Input Passoword" required>
 
-            <input type="submit" name="submit" value="Login">
-            <i><a href="">Register</a></i>
-        </form>
-        <?php if(isset($_GET['eror'])): ?>
-            <b style="color: red;">Username or Password is incorrect</b>
-        <?php endif; ?>
+                <input type="submit" name="submit" value="Login">
+                <i><a href="register.php">Register</a></i>
+            </form>
+            <?php if(isset($_GET['eror'])): ?>
+                <b style="color: red;">Username or Password is incorrect</b>
+            <?php endif; ?>
+        </div>
     </body>
 </html>

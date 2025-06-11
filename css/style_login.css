@@ -16,24 +16,27 @@ body {
   padding: 40px 20px;
 }
 
-h2 {
-  margin-bottom: 10px;
-  font-size: 28px;
-  color: #1d4ed8;
-}
-
-h6 {
-  margin-bottom: 20px;
-  color: #475569;
-}
-
-form {
+.container{
+  margin-top: 40px;
   background: white;
   padding: 30px;
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  text-align: center;
+  color: #1d4ed8;
+}
+
+.container h6 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #475569;
 }
 
 label {
@@ -54,8 +57,15 @@ input[type="password"] {
   font-size: 14px;
 }
 
-input[type="radio"] {
-  margin-right: 6px;
+select {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+select option{
+  text-align: center;
 }
 
 input[type="submit"] {
@@ -76,8 +86,22 @@ input[type="submit"]:hover {
   background: #2563eb;
 }
 
+form i{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px 0;
+}
+
 form i a{   
-    color: #1d4ed8;
-    padding: 0px 50%;
-    text-decoration: none;
+  color: #5075d9;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+form i a:hover{
+  color: #5a6a96;
+  transition: 0.5 ease;
 }

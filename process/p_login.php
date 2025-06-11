@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
         $row = mysqli_fetch_assoc($sql);
 
         if(password_verify($password, $row['password'])){
-            $_SESSION['nama'] = $row['username'];
+            $_SESSION['username'] = $row['username'];
             $_SESSION['email'] = $row['email'];
             $_SESSION['level'] = $row['level'];
 
